@@ -288,9 +288,3 @@ uploadForm.addEventListener('submit', async (e) => {
     }
 });
 
-const https = require('https');
-setInterval(() => {
-    https.get('https://retouchify-backend-1.onrender.com/', () => {
-        console.log('Keep-alive ping sent');
-    }).on('error', () => {});
-}, 10 * 60 * 1000); // every 10 minutes
