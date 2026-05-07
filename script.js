@@ -111,7 +111,7 @@ contactForm.addEventListener('submit', async (e) => {
 
     try {
         // Send the data to your backend endpoint using fetch
-        const response = await fetch('http://localhost:3000/send-message', {
+        const response = await fetch('https://retouchify-backend-1.onrender.com/send-message', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -264,7 +264,7 @@ uploadForm.addEventListener('submit', async (e) => {
     }
 
     try {
-        const response = await fetch('http://localhost:3000/upload', {
+        const response = await fetch('https://retouchify-backend-1.onrender.com/upload', {
             method: 'POST',
             body: formData // Note: Do NOT set Content-Type header when sending FormData, the browser does it automatically
         });
